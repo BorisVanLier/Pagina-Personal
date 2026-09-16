@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.pupue {
+  @apply w-250;
+  @apply h-auto;;
+  @apply mx-auto;
+}
