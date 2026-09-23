@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="h-20 flex items-center justify-between px-10 bg-[#0936D6] texto">
+      <nav className="fixed top-0 left-0 w-full h-20 flex items-center justify-between px-10 bg-[#292522] texto">
         
         <h1
           className="text-4xl text-white "
@@ -35,19 +35,15 @@ function Navbar() {
 
       </nav>
 
-      {isOpen && (
-        <div className="md:hidden bg-[#0936D6] flex flex-col items-center gap-4 py-4 text-white text-xl border-[#1E09D6] border-b-2 border-t-2">
-          <button className="text-2xl font-extrabold">
-            Inicio
-          </button>
-          <button className="text-2xl font-extrabold">
-            Sobre mí
-          </button>
-          <button className="text-2xl font-extrabold">
-            Contacto
-          </button>
-        </div>
-      )}
+<div
+  className={`fixed top-20 left-0 w-full md:hidden bg-[#292522] flex flex-col items-center gap-4 text-white text-xl
+    overflow-hidden transition-all duration-300 ease-in-out
+    ${isOpen ? "max-h-60 py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
+>
+  <button>Inicio</button>
+  <button>Sobre mí</button>
+  <button>Contacto</button>
+</div>
     </>
   );
 }

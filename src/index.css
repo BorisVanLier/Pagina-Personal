@@ -9,5 +9,5 @@ body {
 }
 
 .texto {
-  @apply text-2xl text-white font-grotesk font-extrabold [text-shadow:2px_2px_0_#1E09D6,-2px_-2px_0_#1E09D6,2px_-2px_0_#1E09D6,-2px_2px_0_#1E09D6];
+  @apply text-2xl text-white font-grotesk font-extrabold ;
 }
