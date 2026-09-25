@@ -1,4 +1,5 @@
 import Pupue from "../assets/pupue.gif";
+import BotonYoutube from "./components/BotonYoutube.jsx";
 import "./hero.css";
     {/* <img src={Pupue} alt="Pupue" className="pupue" /> */}
 function Hero() {
@@ -11,7 +12,9 @@ function Hero() {
         <p className="text-4xl text-center font-bold font-grotesk">
           Soy Boris, un pibe que le gusta jugar videojuegos y aprender muchas cosas relacionadas con tecnología.
           <br />
-          El pepe
+            <div>
+              <BotonYoutube/>
+            </div>
         </p>
       </section>
     </>
